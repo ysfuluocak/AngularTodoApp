@@ -1,0 +1,8 @@
+<h2>Kayıt Formu</h2>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+        <label for="content" class="form-label">İçerik: </label>
+        <input class="form-control" type="text" id="content" formControlName="content">
+    </div>
+    <button class="btn btn-success" type="submit" [disabled]="form.invalid">Ekle</button>
+</form>

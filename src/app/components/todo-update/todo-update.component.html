@@ -1,0 +1,8 @@
+<h2>Güncelleme</h2>
+<form [formGroup]="form" (ngSubmit)="updatedTodo()">
+    <div class="mb-3">
+        <label for="content" class="form-label">İçerik: </label>
+        <input class="form-check" type="text" formControlName="content" id="content" >
+    </div>
+    <input type="submit" class="btn btn-success" [disabled]="form.invalid">
+</form>
